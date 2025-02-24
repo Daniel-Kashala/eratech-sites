@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Climatisation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: #ffffff;
+            font-size: 24px;
+            opacity: 0.8;
+            animation: snow 10s linear infinite;
+        }
+
+        @keyframes snow {
+            0% {
+                transform: translateX(0) translateY(-10px);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateX(calc(50vw - 50%)) translateY(100vh);
+                opacity: 0.4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflake">❄</div>
+    <div class="snowflake" style="left: 50px;">❄</div>
+    <div class="snowflake" style="left: 100px;">❄</div>
+    <div class="snowflake" style="left: 150px;">❄</div>
+    <div class="snowflake" style="left: 200px;">❄</div>
+    <div class="snowflake" style="left: 300px;">❄</div>
+    <div class="snowflake" style="left: 400px;">❄</div>
+
+    <script>
+        // Créer un effet de flocons supplémentaires
+        for (let i = 0; i < 50; i++) {
+            let snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = (Math.random() * 5 + 5) + 's'; // Randomize falling speed
+            document.body.appendChild(snowflake);
+        }
+    </script>
+</body>
+</html>
