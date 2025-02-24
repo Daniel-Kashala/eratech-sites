@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effet de Condensation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .window {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background-color: #87CEEB;
+            border: 10px solid #fff;
+            overflow: hidden;
+        }
+
+        .condensation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('condensation.png'); /* Image de buée ou vapeur */
+            background-size: cover;
+            opacity: 0.5;
+            animation: condensation 4s infinite ease-in-out;
+        }
+
+        @keyframes condensation {
+            0% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="condensation"></div>
+    </div>
+</body>
+</html>
