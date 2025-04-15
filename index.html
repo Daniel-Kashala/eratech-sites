@@ -739,65 +739,68 @@ document.getElementById('dislikeBtn').addEventListener('click', () => {
   }
 </style>
 
-    <div id="fixed-container">
-    <button id="static-button" onclick="window.location.href='https://wa.me/243990737418'">
-        WhatsApp <i class="fab fa-whatsapp"></i>
-    </button>
-</div>
-
-<style>
-    #fixed-container {
-        position: fixed;
-        bottom: 50px;
-        right: 5%;
-        z-index: 1000;
-        width: 30%;
-        max-width: 250px;
-    }
-
-    #static-button {
-        width: 100%;
-        background-color: #128C7E;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        padding: 12px 15px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0.2, 0.2);
-        transition: background 0.3s ease;
-    }
-
-    #static-button:hover {
-        background-color: background: linear-gradient(45deg, #00C6FF, #2D1F92);
-    }
-
-    @media (max-width: 768px) {
+  <button id="static-button" onclick="window.location.href='https://wa.me/260975216947'">
+            Whatsapp <i class="fas fa-whatsapp"></i>
+        </button>
+        
+    </div>
+    
+    <style>
         #fixed-container {
-            width: 60%;
-            right: 20%;
-            bottom: 20px;
+            position: fixed;
+            bottom: 50px; /* Remonté légèrement */
+            right: 5%; /* Déplacé un peu vers la gauche */
+            z-index: 1000;
+            width: 30%; /* Occupe 30% de la largeur de l'écran */
+            max-width: 250px; /* Pour éviter qu'il soit trop grand sur grands écrans */
         }
-
+    
         #static-button {
-            font-size: 14px;
+            width: 100%;
+            background-color: #B60B11;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0.2, 0.2);
+            transition: background 0.3s ease;
         }
-    }
+    
+        #static-button:hover {
+            background-color: #FFA100;
+        }
+    
+        /* Responsive : Ajuste la taille du bouton sur mobile */
+        @media (max-width: 768px) {
+            #fixed-container {
+                width: 60%; /* Plus large sur petits écrans */
+                right: 20%; /* Centré horizontalement */
+                bottom: 20px; /* Un peu plus bas sur mobile */
+            }
+    
+            #static-button {
+                font-size: 14px; /* Ajuster la taille du texte */
+            }
+        }
+    
+        /* Pour des écrans très petits (ex. smartphones en mode portrait) */
+        @media (max-width: 480px) {
+            #fixed-container {
+                width: 80%; /* Le bouton occupe une plus grande largeur */
+                right: 10%; /* Toujours centré mais avec un peu plus de marge */
+                bottom: 15px; /* Ajustement de la position en bas */
+            }
+    
+            #static-button {
+                font-size: 14px; /* Taille de police ajustée pour les petits écrans */
+                padding: 10px; /* Ajuster la taille des marges pour les petits écrans */
+            }
+        }
+    </style>
 
-    @media (max-width: 480px) {
-        #fixed-container {
-            width: 60%;
-            right: 8%;
-            bottom: 15px;
-        }
-
-        #static-button {
-            font-size: 14px;
-            padding: 10px;
-        }
-    }
-</style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </body>
