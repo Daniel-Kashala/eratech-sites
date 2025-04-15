@@ -22,13 +22,13 @@ header {
     align-items: center;
     padding: 15px 30px;
     background: #ffffff;
-    color: #B60B11;
+    color: #00C6FF;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 1px solid #B60B11; /* Ajout de la bordure en bas */
+    border-bottom: 1px solid #00C6FF; /* Ajout de la bordure en bas */
 }
 @media (max-width: 768px) {
     header {
@@ -59,12 +59,12 @@ nav {
 
 .menu li a {
     text-decoration: none;
-    color: #B60B11; /* Couleur par défaut */
+    color: #00C6FF; /* Couleur par défaut */
     font-weight: 400;
 }
 
 .menu li a:hover {
-    color: #FFA100; /* Couleur de survol */
+    color: #2D1F92; /* Couleur de survol */
 }
 
 
@@ -90,7 +90,7 @@ nav {
 
 .hero > * {
     position: relative;
-    z-index: 2; /* Permet au texte de rester au-dessus de l'overlay */
+    z-index: 2; 
 }
 
 /* SECTION À PROPOS */
@@ -175,6 +175,6 @@ nav {
 
 @media (min-width: 769px) {
     .logo img {
-        max-width: 180px; /* Taille modérée pour les écrans larges */
+        max-width: 180px; 
     }
 }
